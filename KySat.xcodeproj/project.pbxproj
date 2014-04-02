@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39B1F3CC18ECBD62000D14A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CB18ECBD62000D14A1 /* Foundation.framework */; };
+		39B1F3CE18ECBD62000D14A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CD18ECBD62000D14A1 /* CoreGraphics.framework */; };
+		39B1F3D018ECBD62000D14A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CF18ECBD62000D14A1 /* UIKit.framework */; };
+		39B1F3D618ECBD62000D14A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3D418ECBD62000D14A1 /* InfoPlist.strings */; };
+		39B1F3D818ECBD62000D14A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3D718ECBD62000D14A1 /* main.m */; };
+		39B1F3DC18ECBD62000D14A1 /* KySatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3DB18ECBD62000D14A1 /* KySatAppDelegate.m */; };
+		39B1F3DF18ECBD63000D14A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3DD18ECBD63000D14A1 /* Main.storyboard */; };
+		39B1F3E218ECBD63000D14A1 /* KySatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3E118ECBD63000D14A1 /* KySatViewController.m */; };
+		39B1F3E418ECBD63000D14A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3E318ECBD63000D14A1 /* Images.xcassets */; };
+		39B1F3EB18ECBD63000D14A1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3EA18ECBD63000D14A1 /* XCTest.framework */; };
+		39B1F3EC18ECBD63000D14A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CB18ECBD62000D14A1 /* Foundation.framework */; };
+		39B1F3ED18ECBD63000D14A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CF18ECBD62000D14A1 /* UIKit.framework */; };
+		39B1F3F518ECBD63000D14A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3F318ECBD63000D14A1 /* InfoPlist.strings */; };
+		39B1F3F718ECBD63000D14A1 /* KySatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3F618ECBD63000D14A1 /* KySatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39B1F3EE18ECBD63000D14A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B1F3C018ECBD62000D14A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39B1F3C718ECBD62000D14A1;
+			remoteInfo = KySat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39B1F3C818ECBD62000D14A1 /* KySat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KySat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B1F3CB18ECBD62000D14A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39B1F3CD18ECBD62000D14A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		39B1F3CF18ECBD62000D14A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		39B1F3D318ECBD62000D14A1 /* KySat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KySat-Info.plist"; sourceTree = "<group>"; };
+		39B1F3D518ECBD62000D14A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39B1F3D718ECBD62000D14A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39B1F3D918ECBD62000D14A1 /* KySat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KySat-Prefix.pch"; sourceTree = "<group>"; };
+		39B1F3DA18ECBD62000D14A1 /* KySatAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KySatAppDelegate.h; sourceTree = "<group>"; };
+		39B1F3DB18ECBD62000D14A1 /* KySatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KySatAppDelegate.m; sourceTree = "<group>"; };
+		39B1F3DE18ECBD63000D14A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39B1F3E018ECBD63000D14A1 /* KySatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KySatViewController.h; sourceTree = "<group>"; };
+		39B1F3E118ECBD63000D14A1 /* KySatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KySatViewController.m; sourceTree = "<group>"; };
+		39B1F3E318ECBD63000D14A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39B1F3E918ECBD63000D14A1 /* KySatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KySatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B1F3EA18ECBD63000D14A1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		39B1F3F218ECBD63000D14A1 /* KySatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KySatTests-Info.plist"; sourceTree = "<group>"; };
+		39B1F3F418ECBD63000D14A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39B1F3F618ECBD63000D14A1 /* KySatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KySatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39B1F3C518ECBD62000D14A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B1F3CE18ECBD62000D14A1 /* CoreGraphics.framework in Frameworks */,
+				39B1F3D018ECBD62000D14A1 /* UIKit.framework in Frameworks */,
+				39B1F3CC18ECBD62000D14A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B1F3E618ECBD63000D14A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B1F3EB18ECBD63000D14A1 /* XCTest.framework in Frameworks */,
+				39B1F3ED18ECBD63000D14A1 /* UIKit.framework in Frameworks */,
+				39B1F3EC18ECBD63000D14A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39B1F3BF18ECBD62000D14A1 = {
+			isa = PBXGroup;
+			children = (
+				39B1F3D118ECBD62000D14A1 /* KySat */,
+				39B1F3F018ECBD63000D14A1 /* KySatTests */,
+				39B1F3CA18ECBD62000D14A1 /* Frameworks */,
+				39B1F3C918ECBD62000D14A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39B1F3C918ECBD62000D14A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39B1F3C818ECBD62000D14A1 /* KySat.app */,
+				39B1F3E918ECBD63000D14A1 /* KySatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39B1F3CA18ECBD62000D14A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39B1F3CB18ECBD62000D14A1 /* Foundation.framework */,
+				39B1F3CD18ECBD62000D14A1 /* CoreGraphics.framework */,
+				39B1F3CF18ECBD62000D14A1 /* UIKit.framework */,
+				39B1F3EA18ECBD63000D14A1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39B1F3D118ECBD62000D14A1 /* KySat */ = {
+			isa = PBXGroup;
+			children = (
+				39B1F3DA18ECBD62000D14A1 /* KySatAppDelegate.h */,
+				39B1F3DB18ECBD62000D14A1 /* KySatAppDelegate.m */,
+				39B1F3DD18ECBD63000D14A1 /* Main.storyboard */,
+				39B1F3E018ECBD63000D14A1 /* KySatViewController.h */,
+				39B1F3E118ECBD63000D14A1 /* KySatViewController.m */,
+				39B1F3E318ECBD63000D14A1 /* Images.xcassets */,
+				39B1F3D218ECBD62000D14A1 /* Supporting Files */,
+			);
+			path = KySat;
+			sourceTree = "<group>";
+		};
+		39B1F3D218ECBD62000D14A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39B1F3D318ECBD62000D14A1 /* KySat-Info.plist */,
+				39B1F3D418ECBD62000D14A1 /* InfoPlist.strings */,
+				39B1F3D718ECBD62000D14A1 /* main.m */,
+				39B1F3D918ECBD62000D14A1 /* KySat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39B1F3F018ECBD63000D14A1 /* KySatTests */ = {
+			isa = PBXGroup;
+			children = (
+				39B1F3F618ECBD63000D14A1 /* KySatTests.m */,
+				39B1F3F118ECBD63000D14A1 /* Supporting Files */,
+			);
+			path = KySatTests;
+			sourceTree = "<group>";
+		};
+		39B1F3F118ECBD63000D14A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39B1F3F218ECBD63000D14A1 /* KySatTests-Info.plist */,
+				39B1F3F318ECBD63000D14A1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39B1F3C718ECBD62000D14A1 /* KySat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B1F3FA18ECBD63000D14A1 /* Build configuration list for PBXNativeTarget "KySat" */;
+			buildPhases = (
+				39B1F3C418ECBD62000D14A1 /* Sources */,
+				39B1F3C518ECBD62000D14A1 /* Frameworks */,
+				39B1F3C618ECBD62000D14A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KySat;
+			productName = KySat;
+			productReference = 39B1F3C818ECBD62000D14A1 /* KySat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39B1F3E818ECBD63000D14A1 /* KySatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B1F3FD18ECBD63000D14A1 /* Build configuration list for PBXNativeTarget "KySatTests" */;
+			buildPhases = (
+				39B1F3E518ECBD63000D14A1 /* Sources */,
+				39B1F3E618ECBD63000D14A1 /* Frameworks */,
+				39B1F3E718ECBD63000D14A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39B1F3EF18ECBD63000D14A1 /* PBXTargetDependency */,
+			);
+			name = KySatTests;
+			productName = KySatTests;
+			productReference = 39B1F3E918ECBD63000D14A1 /* KySatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39B1F3C018ECBD62000D14A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KySat;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Matthew Fahrbach";
+				TargetAttributes = {
+					39B1F3E818ECBD63000D14A1 = {
+						TestTargetID = 39B1F3C718ECBD62000D14A1;
+					};
+				};
+			};
+			buildConfigurationList = 39B1F3C318ECBD62000D14A1 /* Build configuration list for PBXProject "KySat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39B1F3BF18ECBD62000D14A1;
+			productRefGroup = 39B1F3C918ECBD62000D14A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39B1F3C718ECBD62000D14A1 /* KySat */,
+				39B1F3E818ECBD63000D14A1 /* KySatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39B1F3C618ECBD62000D14A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B1F3E418ECBD63000D14A1 /* Images.xcassets in Resources */,
+				39B1F3D618ECBD62000D14A1 /* InfoPlist.strings in Resources */,
+				39B1F3DF18ECBD63000D14A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B1F3E718ECBD63000D14A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B1F3F518ECBD63000D14A1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39B1F3C418ECBD62000D14A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B1F3E218ECBD63000D14A1 /* KySatViewController.m in Sources */,
+				39B1F3D818ECBD62000D14A1 /* main.m in Sources */,
+				39B1F3DC18ECBD62000D14A1 /* KySatAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B1F3E518ECBD63000D14A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B1F3F718ECBD63000D14A1 /* KySatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39B1F3EF18ECBD63000D14A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39B1F3C718ECBD62000D14A1 /* KySat */;
+			targetProxy = 39B1F3EE18ECBD63000D14A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39B1F3D418ECBD62000D14A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B1F3D518ECBD62000D14A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		39B1F3DD18ECBD63000D14A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B1F3DE18ECBD63000D14A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39B1F3F318ECBD63000D14A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B1F3F418ECBD63000D14A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39B1F3F818ECBD63000D14A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		39B1F3F918ECBD63000D14A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39B1F3FB18ECBD63000D14A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KySat/KySat-Prefix.pch";
+				INFOPLIST_FILE = "KySat/KySat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		39B1F3FC18ECBD63000D14A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KySat/KySat-Prefix.pch";
+				INFOPLIST_FILE = "KySat/KySat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		39B1F3FE18ECBD63000D14A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KySat.app/KySat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KySat/KySat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KySatTests/KySatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		39B1F3FF18ECBD63000D14A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KySat.app/KySat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KySat/KySat-Prefix.pch";
+				INFOPLIST_FILE = "KySatTests/KySatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39B1F3C318ECBD62000D14A1 /* Build configuration list for PBXProject "KySat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B1F3F818ECBD63000D14A1 /* Debug */,
+				39B1F3F918ECBD63000D14A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39B1F3FA18ECBD63000D14A1 /* Build configuration list for PBXNativeTarget "KySat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B1F3FB18ECBD63000D14A1 /* Debug */,
+				39B1F3FC18ECBD63000D14A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		39B1F3FD18ECBD63000D14A1 /* Build configuration list for PBXNativeTarget "KySatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B1F3FE18ECBD63000D14A1 /* Debug */,
+				39B1F3FF18ECBD63000D14A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39B1F3C018ECBD62000D14A1 /* Project object */;
+}
