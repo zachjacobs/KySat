@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3916D18918F43F8F00BBAA9A /* ksbg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3916D18818F43F8F00BBAA9A /* ksbg2.png */; };
 		39B1F3CC18ECBD62000D14A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CB18ECBD62000D14A1 /* Foundation.framework */; };
 		39B1F3CE18ECBD62000D14A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CD18ECBD62000D14A1 /* CoreGraphics.framework */; };
 		39B1F3D018ECBD62000D14A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CF18ECBD62000D14A1 /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		39B1F3F518ECBD63000D14A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3F318ECBD63000D14A1 /* InfoPlist.strings */; };
 		39B1F3F718ECBD63000D14A1 /* KySatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3F618ECBD63000D14A1 /* KySatTests.m */; };
 		39DA32AC18ECEFFA0087D7E9 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA32AB18ECEFFA0087D7E9 /* AsyncImageView.m */; };
-		39DA32AE18ECF5140087D7E9 /* KySat-2_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39DA32AD18ECF5140087D7E9 /* KySat-2_logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3916D18818F43F8F00BBAA9A /* ksbg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ksbg2.png; path = Images/ksbg2.png; sourceTree = SOURCE_ROOT; };
 		39B1F3C818ECBD62000D14A1 /* KySat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KySat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1F3CB18ECBD62000D14A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		39B1F3CD18ECBD62000D14A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,7 +58,6 @@
 		39B1F3F618ECBD63000D14A1 /* KySatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KySatTests.m; sourceTree = "<group>"; };
 		39DA32AA18ECEFFA0087D7E9 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		39DA32AB18ECEFFA0087D7E9 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
-		39DA32AD18ECF5140087D7E9 /* KySat-2_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "KySat-2_logo.jpg"; path = "../../KySat-2_logo.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3916D18318F43E3800BBAA9A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3916D18818F43F8F00BBAA9A /* ksbg2.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		39B1F3BF18ECBD62000D14A1 = {
 			isa = PBXGroup;
 			children = (
 				39DA32A918ECEFFA0087D7E9 /* AsyncImageView */,
+				3916D18318F43E3800BBAA9A /* Images */,
 				39B1F3D118ECBD62000D14A1 /* KySat */,
 				39B1F3F018ECBD63000D14A1 /* KySatTests */,
 				39B1F3CA18ECBD62000D14A1 /* Frameworks */,
@@ -118,7 +127,6 @@
 		39B1F3D118ECBD62000D14A1 /* KySat */ = {
 			isa = PBXGroup;
 			children = (
-				39DA32AD18ECF5140087D7E9 /* KySat-2_logo.jpg */,
 				39B1F3DA18ECBD62000D14A1 /* KySatAppDelegate.h */,
 				39B1F3DB18ECBD62000D14A1 /* KySatAppDelegate.m */,
 				39B1F3DD18ECBD63000D14A1 /* Main.storyboard */,
@@ -254,7 +262,7 @@
 			files = (
 				39B1F3E418ECBD63000D14A1 /* Images.xcassets in Resources */,
 				39B1F3D618ECBD62000D14A1 /* InfoPlist.strings in Resources */,
-				39DA32AE18ECF5140087D7E9 /* KySat-2_logo.jpg in Resources */,
+				3916D18918F43F8F00BBAA9A /* ksbg2.png in Resources */,
 				39B1F3DF18ECBD63000D14A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

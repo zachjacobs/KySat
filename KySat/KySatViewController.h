@@ -10,7 +10,12 @@
 
 @interface KySatViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *lblStatus;
-@property (weak, nonatomic) IBOutlet UIImageView *imageViewStatus;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewStatus;
+
+-(void)updateImageView:(NSString*)urlName;
+-(IBAction)topLeftButtonPressed;
+-(IBAction)topRightButtonPressed;
+-(IBAction)bottomLeftButtonPressed;
+-(IBAction)bottomRightButtonPressed;
 
 @end
