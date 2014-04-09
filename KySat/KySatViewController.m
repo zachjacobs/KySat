@@ -52,30 +52,22 @@
 
 -(IBAction)topLeftButtonPressed
 {
-    printf("enter function topLeftButtonPressed\n");
     [self updateImageView:@"http://4.bp.blogspot.com/-KqIn9k3g9ck/UTsdEH8WotI/AAAAAAAAAHY/KBTqD5kiGWw/s1600/animals_beautiful_extraordinary_wild_birds_mad_owl_picture-17.jpg"];
-    printf("exit function topLeftButtonPressed\n");
 }
 
 -(IBAction)topRightButtonPressed
 {
-    printf("enter function topRightButtonPressed\n");
     [self updateImageView:@"http://actnowtraining.files.wordpress.com/2012/02/cat.jpg"];
-    printf("exit function topRightButtonPressed\n");
 }
 
 -(IBAction)bottomLeftButtonPressed
 {
-    printf("enter function bottomLeftButtonPressed\n");
     [self updateImageView:@"http://static.ddmcdn.com/en-us/apl/breedselector/images/breed-selector/dogs/breeds/border-collie_04_lg.jpg"];
-    printf("exit function bottomLeftButtonPressed\n");
 }
 
 -(IBAction)bottomRightButtonPressed
 {
-    printf("enter function bottomRightButtonPressed\n");
     [self updateImageView:@"http://images.nationalgeographic.com/wpf/media-live/photos/000/005/cache/great-white-shark_559_600x450.jpg"];
-    printf("exit function bottomRightButtonPressed\n");
 }
 
 @end
