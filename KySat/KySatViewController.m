@@ -62,7 +62,7 @@
 {
     [self deselectAllButtons];
     [_topLeftButton setSelected:YES];
-    [self updateImageView:@"http://4.bp.blogspot.com/-KqIn9k3g9ck/UTsdEH8WotI/AAAAAAAAAHY/KBTqD5kiGWw/s1600/animals_beautiful_extraordinary_wild_birds_mad_owl_picture-17.jpg"];
+    [self updateImageView:@"http://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544"];
 }
 
 -(IBAction)topRightButtonPressed
