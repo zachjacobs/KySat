@@ -23,6 +23,8 @@
 		39B1F3F518ECBD63000D14A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3F318ECBD63000D14A1 /* InfoPlist.strings */; };
 		39B1F3F718ECBD63000D14A1 /* KySatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3F618ECBD63000D14A1 /* KySatTests.m */; };
 		39DA32AC18ECEFFA0087D7E9 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA32AB18ECEFFA0087D7E9 /* AsyncImageView.m */; };
+		39FF72B618FC5C5100BCCDDC /* trackerbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FF72B418FC5C5000BCCDDC /* trackerbutton.png */; };
+		39FF72B718FC5C5100BCCDDC /* Trackerbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FF72B518FC5C5000BCCDDC /* Trackerbutton2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		39B1F3F618ECBD63000D14A1 /* KySatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KySatTests.m; sourceTree = "<group>"; };
 		39DA32AA18ECEFFA0087D7E9 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		39DA32AB18ECEFFA0087D7E9 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		39FF72B418FC5C5000BCCDDC /* trackerbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trackerbutton.png; path = Images/trackerbutton.png; sourceTree = SOURCE_ROOT; };
+		39FF72B518FC5C5000BCCDDC /* Trackerbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trackerbutton2.png; path = Images/Trackerbutton2.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				3916D18818F43F8F00BBAA9A /* ksbg2.png */,
+				39FF72B418FC5C5000BCCDDC /* trackerbutton.png */,
+				39FF72B518FC5C5000BCCDDC /* Trackerbutton2.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -261,9 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B1F3E418ECBD63000D14A1 /* Images.xcassets in Resources */,
+				39FF72B618FC5C5100BCCDDC /* trackerbutton.png in Resources */,
 				39B1F3D618ECBD62000D14A1 /* InfoPlist.strings in Resources */,
 				3916D18918F43F8F00BBAA9A /* ksbg2.png in Resources */,
 				39B1F3DF18ECBD63000D14A1 /* Main.storyboard in Resources */,
+				39FF72B718FC5C5100BCCDDC /* Trackerbutton2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@
 
 @interface KySatViewController ()
 
-@property (nonatomic, strong) NSData *imageData;
+@property (nonatomic) NSInteger *selectedButton;
 
 @end
 
@@ -50,23 +50,39 @@
     });
 }
 
+-(void)deselectAllButtons
+{
+    [_topLeftButton setSelected:NO];
+    [_topRightButton setSelected:NO];
+    [_bottomLeftButton setSelected:NO];
+    [_bottomRightButton setSelected:NO];
+}
+
 -(IBAction)topLeftButtonPressed
 {
+    [self deselectAllButtons];
+    [_topLeftButton setSelected:YES];
     [self updateImageView:@"http://4.bp.blogspot.com/-KqIn9k3g9ck/UTsdEH8WotI/AAAAAAAAAHY/KBTqD5kiGWw/s1600/animals_beautiful_extraordinary_wild_birds_mad_owl_picture-17.jpg"];
 }
 
 -(IBAction)topRightButtonPressed
 {
+    [self deselectAllButtons];
+    [_topRightButton setSelected:YES];
     [self updateImageView:@"http://actnowtraining.files.wordpress.com/2012/02/cat.jpg"];
 }
 
 -(IBAction)bottomLeftButtonPressed
 {
+    [self deselectAllButtons];
+    [_bottomLeftButton setSelected:YES];
     [self updateImageView:@"http://static.ddmcdn.com/en-us/apl/breedselector/images/breed-selector/dogs/breeds/border-collie_04_lg.jpg"];
 }
 
 -(IBAction)bottomRightButtonPressed
 {
+    [self deselectAllButtons];
+    [_bottomRightButton setSelected:YES];
     [self updateImageView:@"http://images.nationalgeographic.com/wpf/media-live/photos/000/005/cache/great-white-shark_559_600x450.jpg"];
 }
 
