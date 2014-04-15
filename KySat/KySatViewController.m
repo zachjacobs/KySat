@@ -62,6 +62,7 @@
 {
     [self deselectAllButtons];
     [_topLeftButton setSelected:YES];
+    [_currentSatelliteLabel setText:@"Current Satellite: KySat-2"];
     [self updateImageView:@"http://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544"];
 }
 
@@ -69,6 +70,7 @@
 {
     [self deselectAllButtons];
     [_topRightButton setSelected:YES];
+    [_currentSatelliteLabel setText:@"Current Satellite: T-LogoQube"];
     [self updateImageView:@"http://actnowtraining.files.wordpress.com/2012/02/cat.jpg"];
 }
 
@@ -76,6 +78,7 @@
 {
     [self deselectAllButtons];
     [_bottomLeftButton setSelected:YES];
+    [_currentSatelliteLabel setText:@"Current Satellite: $50 Sat"];
     [self updateImageView:@"http://static.ddmcdn.com/en-us/apl/breedselector/images/breed-selector/dogs/breeds/border-collie_04_lg.jpg"];
 }
 
@@ -83,6 +86,7 @@
 {
     [self deselectAllButtons];
     [_bottomRightButton setSelected:YES];
+    [_currentSatelliteLabel setText:@"Current Satellite: UniSat-5"];
     [self updateImageView:@"http://images.nationalgeographic.com/wpf/media-live/photos/000/005/cache/great-white-shark_559_600x450.jpg"];
 }
 

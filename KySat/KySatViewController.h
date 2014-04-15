@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *topRightButton;
 @property (strong, nonatomic) IBOutlet UIButton *bottomLeftButton;
 @property (strong, nonatomic) IBOutlet UIButton *bottomRightButton;
+@property (strong, nonatomic) IBOutlet UILabel *currentSatelliteLabel;
 
 -(void)updateImageView:(NSString*)urlName;
 -(void)deselectAllButtons;
