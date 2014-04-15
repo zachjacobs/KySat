@@ -10,8 +10,6 @@
 
 @interface KySatViewController ()
 
-@property (nonatomic) NSInteger *selectedButton;
-
 @end
 
 @implementation KySatViewController
@@ -64,7 +62,7 @@
     [self deselectAllButtons];
     [_topLeftButton setSelected:YES];
     [_currentSatelliteLabel setText:@"Current Satellite: KySat-2"];
-    [self updateImageView:@"http://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544"];
+    [self updateImageView:@"http://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=1100&height=550&mode=M&satid=39384"];
 }
 
 -(IBAction)topRightButtonPressed
@@ -72,7 +70,7 @@
     [self deselectAllButtons];
     [_topRightButton setSelected:YES];
     [_currentSatelliteLabel setText:@"Current Satellite: T-LogoQube"];
-    [self updateImageView:@"http://actnowtraining.files.wordpress.com/2012/02/cat.jpg"];
+    [self updateImageView:@"http://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=1100&height=550&mode=M&satid=39434"];
 }
 
 -(IBAction)bottomLeftButtonPressed
@@ -80,7 +78,7 @@
     [self deselectAllButtons];
     [_bottomLeftButton setSelected:YES];
     [_currentSatelliteLabel setText:@"Current Satellite: $50 Sat"];
-    [self updateImageView:@"http://static.ddmcdn.com/en-us/apl/breedselector/images/breed-selector/dogs/breeds/border-collie_04_lg.jpg"];
+    [self updateImageView:@"http://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=1100&height=550&mode=M&satid=39436"];
 }
 
 -(IBAction)bottomRightButtonPressed
@@ -88,11 +86,12 @@
     [self deselectAllButtons];
     [_bottomRightButton setSelected:YES];
     [_currentSatelliteLabel setText:@"Current Satellite: UniSat-5"];
-    [self updateImageView:@"http://images.nationalgeographic.com/wpf/media-live/photos/000/005/cache/great-white-shark_559_600x450.jpg"];
+    [self updateImageView:@"http://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=1100&height=550&mode=M&satid=39421"];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
+    // http://stackoverflow.com/questions/18977160/change-status-bar-text-colour-from-white-ios-7-xcode-5
     return UIStatusBarStyleLightContent;
 }
 
