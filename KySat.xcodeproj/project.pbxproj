@@ -40,6 +40,7 @@
 		3920451F18FC8D2800BEC404 /* unisattilepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 392044FF18FC8D2800BEC404 /* unisattilepressed.png */; };
 		3920452018FC8D2800BEC404 /* unisattilepressed2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3920450018FC8D2800BEC404 /* unisattilepressed2.png */; };
 		3920452118FC8D2800BEC404 /* wheelbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3920450118FC8D2800BEC404 /* wheelbg.png */; };
+		399C3BC718FD82DC00FC2BA1 /* bw_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 399C3BC618FD82DC00FC2BA1 /* bw_gradient.png */; };
 		39B1F3CC18ECBD62000D14A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CB18ECBD62000D14A1 /* Foundation.framework */; };
 		39B1F3CE18ECBD62000D14A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CD18ECBD62000D14A1 /* CoreGraphics.framework */; };
 		39B1F3D018ECBD62000D14A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CF18ECBD62000D14A1 /* UIKit.framework */; };
@@ -103,6 +104,7 @@
 		392044FF18FC8D2800BEC404 /* unisattilepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unisattilepressed.png; sourceTree = "<group>"; };
 		3920450018FC8D2800BEC404 /* unisattilepressed2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unisattilepressed2.png; sourceTree = "<group>"; };
 		3920450118FC8D2800BEC404 /* wheelbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheelbg.png; sourceTree = "<group>"; };
+		399C3BC618FD82DC00FC2BA1 /* bw_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bw_gradient.png; path = Images/bw_gradient.png; sourceTree = SOURCE_ROOT; };
 		39B1F3C818ECBD62000D14A1 /* KySat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KySat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1F3CB18ECBD62000D14A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		39B1F3CD18ECBD62000D14A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +157,7 @@
 		3916D18318F43E3800BBAA9A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				399C3BC618FD82DC00FC2BA1 /* bw_gradient.png */,
 				392044E118FC8D2800BEC404 /* drawable-hdpi */,
 				3916D18818F43F8F00BBAA9A /* ksbg2.png */,
 				39FF72B418FC5C5000BCCDDC /* trackerbutton.png */,
@@ -397,6 +400,7 @@
 				3920452118FC8D2800BEC404 /* wheelbg.png in Resources */,
 				3920450C18FC8D2800BEC404 /* fiftysatpic.png in Resources */,
 				3920450918FC8D2800BEC404 /* eagle2tile2.png in Resources */,
+				399C3BC718FD82DC00FC2BA1 /* bw_gradient.png in Resources */,
 				3920451418FC8D2800BEC404 /* kysat2tile2.png in Resources */,
 				3920450F18FC8D2800BEC404 /* infotile1.png in Resources */,
 				3920451318FC8D2800BEC404 /* kysat2pic.png in Resources */,
