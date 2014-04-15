@@ -23,5 +23,6 @@
 -(IBAction)topRightButtonPressed;
 -(IBAction)bottomLeftButtonPressed;
 -(IBAction)bottomRightButtonPressed;
+- (UIStatusBarStyle)preferredStatusBarStyle;
 
 @end

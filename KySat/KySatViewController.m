@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self preferredStatusBarStyle];
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,6 +89,11 @@
     [_bottomRightButton setSelected:YES];
     [_currentSatelliteLabel setText:@"Current Satellite: UniSat-5"];
     [self updateImageView:@"http://images.nationalgeographic.com/wpf/media-live/photos/000/005/cache/great-white-shark_559_600x450.jpg"];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 @end
