@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Ky Sat View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="KySatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="xKZ-m8-iTm">
+                                <rect key="frame" x="-21" y="0.0" width="346" height="581"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.30000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bw_gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="sMg-ja-kOx">
+                                <rect key="frame" x="160" y="398" width="140" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bw_gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-Ux-ZlE">
+                                <rect key="frame" x="20" y="398" width="140" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kstransparenthdlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ptq-Lv-zXJ">
+                                <rect key="frame" x="36" y="37" width="233" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eaz-WL-zsf">
+                                <rect key="frame" x="0.0" y="203" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxt-HQ-Hy1">
+                                <rect key="frame" x="20" y="398" width="140" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="kysat2tilepressed2.png"/>
+                                <state key="selected" image="kysat2tile2.png"/>
+                                <connections>
+                                    <action selector="topLeftButtonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MlM-q2-u4f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RO9-Z0-nrp">
+                                <rect key="frame" x="160" y="398" width="140" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="eagle1tilepressed2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="eagle1tile2.png"/>
+                                <connections>
+                                    <action selector="topRightButtonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pw3-io-dnt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7b-aD-qdu">
+                                <rect key="frame" x="20" y="473" width="140" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="eagle2tilepressed2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="eagle2tile2.png"/>
+                                <connections>
+                                    <action selector="bottomLeftButtonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AYc-yn-px1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFp-Ap-qYP">
+                                <rect key="frame" x="160" y="473" width="140" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="unisattilepressed2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="unisattile2.png"/>
+                                <connections>
+                                    <action selector="bottomRightButtonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jtb-ba-mFV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ear-uo-4f3">
+                                <rect key="frame" x="20" y="174" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.75294125080108643" blue="0.27058824896812439" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLeftButton" destination="V7b-aD-qdu" id="DgS-Gv-0Xm"/>
+                        <outlet property="bottomRightButton" destination="AFp-Ap-qYP" id="j9m-ba-uXt"/>
+                        <outlet property="currentSatelliteLabel" destination="ear-uo-4f3" id="hc4-e4-7gb"/>
+                        <outlet property="imageViewStatus" destination="Eaz-WL-zsf" id="Jmj-fh-eRs"/>
+                        <outlet property="topLeftButton" destination="Xxt-HQ-Hy1" id="CKP-QP-1sA"/>
+                        <outlet property="topRightButton" destination="RO9-Z0-nrp" id="d3F-Vq-JIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="17"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bw_gradient.png" width="800" height="600"/>
+        <image name="eagle1tile2.png" width="512" height="412"/>
+        <image name="eagle1tilepressed2.png" width="512" height="412"/>
+        <image name="eagle2tile2.png" width="512" height="412"/>
+        <image name="eagle2tilepressed2.png" width="512" height="412"/>
+        <image name="kstransparenthdlogo.png" width="1410" height="695"/>
+        <image name="kysat2tile2.png" width="512" height="412"/>
+        <image name="kysat2tilepressed2.png" width="512" height="412"/>
+        <image name="newbg1.png" width="992" height="1288"/>
+        <image name="unisattile2.png" width="512" height="412"/>
+        <image name="unisattilepressed2.png" width="512" height="412"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
