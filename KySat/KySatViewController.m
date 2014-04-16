@@ -27,16 +27,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+// updateImageView: urlName
+// Displays the image at urlName in the image view.
 -(void)updateImageView:(NSString*)urlName
 {
     // http://stackoverflow.com/questions/15702608/faster-way-to-load-an-image-from-a-url-and-display-it-in-an-iphone-app
     dispatch_queue_t q = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     dispatch_async(q, ^{
         //---update the UIViewController---
-        KySatViewController *vc =
-        (KySatViewController *)
-        [[[UIApplication sharedApplication] keyWindow]
-         rootViewController];
+        KySatViewController *vc = (KySatViewController *)
+            [[[UIApplication sharedApplication] keyWindow] rootViewController];
         /* Fetch the image from the server... */
         NSURL *url = [NSURL URLWithString:urlName];
         NSData *data = [NSData dataWithContentsOfURL:url];
@@ -49,6 +49,8 @@
     });
 }
 
+// The buttons have statuses: default, highlighted, selected, etc.
+// The display of the button may change with its status.
 -(void)deselectAllButtons
 {
     [_topLeftButton setSelected:NO];
@@ -89,6 +91,7 @@
     [self updateImageView:@"http://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=1100&height=550&mode=M&satid=39421"];
 }
 
+// Use the white status bar for this app.
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     // http://stackoverflow.com/questions/18977160/change-status-bar-text-colour-from-white-ios-7-xcode-5

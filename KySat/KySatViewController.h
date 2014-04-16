@@ -10,6 +10,7 @@
 
 @interface KySatViewController : UIViewController
 
+// Outlets from the story board objects
 @property (strong, nonatomic) IBOutlet UIImageView *imageViewStatus;
 @property (strong, nonatomic) IBOutlet UIButton *topLeftButton;
 @property (strong, nonatomic) IBOutlet UIButton *topRightButton;
@@ -17,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *bottomRightButton;
 @property (strong, nonatomic) IBOutlet UILabel *currentSatelliteLabel;
 
+// KySatViewController methods
 -(void)updateImageView:(NSString*)urlName;
 -(void)deselectAllButtons;
 -(IBAction)topLeftButtonPressed;
