@@ -6,7 +6,7 @@ Tracks satellites by requesting images from
 
 The majority of this project's code is found in `KySat/KySatViewController*` and the XCode 5 storyboard file, which only appears when the XCode 5 project is launched. This application is modeled after the Anroid application that Kentucky Space developed, and a screenshot of our application is provided below.
 
-->![](Images/app_screen_shot.png =300x)<-
+->![](https://raw.githubusercontent.com/fahrbach/KySat/master/Images/app_screen_shot.png =300x)<-
 
 Future improvements to this project include:
 
