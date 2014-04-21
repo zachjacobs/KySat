@@ -54,6 +54,8 @@
 		39B1F3ED18ECBD63000D14A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CF18ECBD62000D14A1 /* UIKit.framework */; };
 		39B1F3F518ECBD63000D14A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3F318ECBD63000D14A1 /* InfoPlist.strings */; };
 		39B1F3F718ECBD63000D14A1 /* KySatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3F618ECBD63000D14A1 /* KySatTests.m */; };
+		39C779651905CF730065E3E0 /* launch_image_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C779641905CF730065E3E0 /* launch_image_2x.png */; };
+		39FCE7231905C77E00DBCB35 /* launch_image_r4.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FCE7221905C77E00DBCB35 /* launch_image_r4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		39B1F3F218ECBD63000D14A1 /* KySatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KySatTests-Info.plist"; sourceTree = "<group>"; };
 		39B1F3F418ECBD63000D14A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39B1F3F618ECBD63000D14A1 /* KySatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KySatTests.m; sourceTree = "<group>"; };
+		39C779641905CF730065E3E0 /* launch_image_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_image_2x.png; path = ../../LaunchImages/launch_image_2x.png; sourceTree = "<group>"; };
+		39FCE7221905C77E00DBCB35 /* launch_image_r4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_image_r4.png; path = ../../LaunchImages/launch_image_r4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 		3916D18318F43E3800BBAA9A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				39C779641905CF730065E3E0 /* launch_image_2x.png */,
+				39FCE7221905C77E00DBCB35 /* launch_image_r4.png */,
 				399C3BC618FD82DC00FC2BA1 /* bw_gradient.png */,
 				392044E118FC8D2800BEC404 /* drawable-hdpi */,
 			);
@@ -359,6 +365,8 @@
 				3920451018FC8D2800BEC404 /* ks_white.png in Resources */,
 				39B1F3E418ECBD63000D14A1 /* Images.xcassets in Resources */,
 				3920450418FC8D2800BEC404 /* calltile.png in Resources */,
+				39C779651905CF730065E3E0 /* launch_image_2x.png in Resources */,
+				39FCE7231905C77E00DBCB35 /* launch_image_r4.png in Resources */,
 				3920450818FC8D2800BEC404 /* eagle1tilepressed2.png in Resources */,
 				3920450E18FC8D2800BEC404 /* ic_launcher.png in Resources */,
 				3920450B18FC8D2800BEC404 /* exomedlogo.png in Resources */,
