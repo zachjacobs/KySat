@@ -10,6 +10,7 @@ The majority of this project's code is found in `KySat/KySatViewController*` and
 
 Future improvements to this project include:
 
+- Create iOS app icons and add the _Licensed Application End User Licence Agreement_.
 - Replacing the default iOS image viewer with the following custom asynchronous image viewer that continually retrieves images: [AsynchImageView](https://github.com/nicklockwood/AsyncImageView).
 - Adding Kentucky Space's Twitter feed and pages about Kentucky Space and their satellites.
 
