@@ -56,6 +56,7 @@
 		39B1F3ED18ECBD63000D14A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CF18ECBD62000D14A1 /* UIKit.framework */; };
 		39B1F3F518ECBD63000D14A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3F318ECBD63000D14A1 /* InfoPlist.strings */; };
 		39B1F3F718ECBD63000D14A1 /* KySatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3F618ECBD63000D14A1 /* KySatTests.m */; };
+		B15C0A1A1924625200EB43BE /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C0A191924625200EB43BE /* PageContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,8 @@
 		39B1F3F218ECBD63000D14A1 /* KySatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KySatTests-Info.plist"; sourceTree = "<group>"; };
 		39B1F3F418ECBD63000D14A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39B1F3F618ECBD63000D14A1 /* KySatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KySatTests.m; sourceTree = "<group>"; };
+		B15C0A181924625200EB43BE /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		B15C0A191924625200EB43BE /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +239,8 @@
 				39B1F3DA18ECBD62000D14A1 /* KySatAppDelegate.h */,
 				39B1F3DB18ECBD62000D14A1 /* KySatAppDelegate.m */,
 				39B1F3DD18ECBD63000D14A1 /* Main.storyboard */,
+				B15C0A181924625200EB43BE /* PageContentViewController.h */,
+				B15C0A191924625200EB43BE /* PageContentViewController.m */,
 				39B1F3E018ECBD63000D14A1 /* KySatViewController.h */,
 				39B1F3E118ECBD63000D14A1 /* KySatViewController.m */,
 				39B1F3E318ECBD63000D14A1 /* Images.xcassets */,
@@ -414,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B1F3E218ECBD63000D14A1 /* KySatViewController.m in Sources */,
+				B15C0A1A1924625200EB43BE /* PageContentViewController.m in Sources */,
 				39B1F3D818ECBD62000D14A1 /* main.m in Sources */,
 				39B1F3DC18ECBD62000D14A1 /* KySatAppDelegate.m in Sources */,
 			);

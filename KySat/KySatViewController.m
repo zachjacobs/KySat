@@ -19,12 +19,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self preferredStatusBarStyle];
+    
+    //cache all images here and just display them instead of downloading them everytime.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    //Dispose of images here
 }
 
 // updateImageView: urlName
