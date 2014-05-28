@@ -1,8 +1,8 @@
 //
 //  PageContentViewController.h
-//  KySat
+//  PageViewDemo
 //
-//  Created by Zach Jacobs on 5/14/14.
+//  Created by Zach Jacobs on 5/19/14.
 //  Copyright (c) 2014 Matthew Fahrbach. All rights reserved.
 //
 
@@ -10,10 +10,8 @@
 
 @interface PageContentViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (weak, nonatomic) IBOutlet UITextField *titleLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property NSUInteger pageIndex;
 @property NSString *titleText;
 @property NSString *imageFile;
-
 @end

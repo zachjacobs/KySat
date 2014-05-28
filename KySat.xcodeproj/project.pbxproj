@@ -56,8 +56,12 @@
 		39B1F3ED18ECBD63000D14A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1F3CF18ECBD62000D14A1 /* UIKit.framework */; };
 		39B1F3F518ECBD63000D14A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39B1F3F318ECBD63000D14A1 /* InfoPlist.strings */; };
 		39B1F3F718ECBD63000D14A1 /* KySatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B1F3F618ECBD63000D14A1 /* KySatTests.m */; };
-		B15C0A1A1924625200EB43BE /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C0A191924625200EB43BE /* PageContentViewController.m */; };
-		B1927E081924D8C200CE3B62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1927E071924D8C200CE3B62 /* ViewController.m */; };
+		B12F26141926302A00D32EA8 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12F26111926302A00D32EA8 /* PageContentViewController.m */; };
+		B12F26151926302A00D32EA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12F26131926302A00D32EA8 /* ViewController.m */; };
+		B12F261A192630C700D32EA8 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = B12F2616192630C700D32EA8 /* page1.png */; };
+		B12F261B192630C700D32EA8 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = B12F2617192630C700D32EA8 /* page2.png */; };
+		B12F261C192630C700D32EA8 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = B12F2618192630C700D32EA8 /* page3.png */; };
+		B12F261D192630C700D32EA8 /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = B12F2619192630C700D32EA8 /* page4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,10 +129,14 @@
 		39B1F3F218ECBD63000D14A1 /* KySatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KySatTests-Info.plist"; sourceTree = "<group>"; };
 		39B1F3F418ECBD63000D14A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39B1F3F618ECBD63000D14A1 /* KySatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KySatTests.m; sourceTree = "<group>"; };
-		B15C0A181924625200EB43BE /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
-		B15C0A191924625200EB43BE /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
-		B1927E061924D8C200CE3B62 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B1927E071924D8C200CE3B62 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B12F26101926302A00D32EA8 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		B12F26111926302A00D32EA8 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		B12F26121926302A00D32EA8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B12F26131926302A00D32EA8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B12F2616192630C700D32EA8 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
+		B12F2617192630C700D32EA8 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
+		B12F2618192630C700D32EA8 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
+		B12F2619192630C700D32EA8 /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +166,10 @@
 		3916D18318F43E3800BBAA9A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B12F2616192630C700D32EA8 /* page1.png */,
+				B12F2617192630C700D32EA8 /* page2.png */,
+				B12F2618192630C700D32EA8 /* page3.png */,
+				B12F2619192630C700D32EA8 /* page4.png */,
 				390C9BE5190DD306003766F1 /* launch_image_2x.png */,
 				390C9BE6190DD306003766F1 /* launch_image_r4.png */,
 				399C3BC618FD82DC00FC2BA1 /* bw_gradient.png */,
@@ -239,13 +251,13 @@
 		39B1F3D118ECBD62000D14A1 /* KySat */ = {
 			isa = PBXGroup;
 			children = (
-				B1927E061924D8C200CE3B62 /* ViewController.h */,
-				B1927E071924D8C200CE3B62 /* ViewController.m */,
+				B12F26101926302A00D32EA8 /* PageContentViewController.h */,
+				B12F26111926302A00D32EA8 /* PageContentViewController.m */,
+				B12F26121926302A00D32EA8 /* ViewController.h */,
+				B12F26131926302A00D32EA8 /* ViewController.m */,
 				39B1F3DA18ECBD62000D14A1 /* KySatAppDelegate.h */,
 				39B1F3DB18ECBD62000D14A1 /* KySatAppDelegate.m */,
 				39B1F3DD18ECBD63000D14A1 /* Main.storyboard */,
-				B15C0A181924625200EB43BE /* PageContentViewController.h */,
-				B15C0A191924625200EB43BE /* PageContentViewController.m */,
 				39B1F3E018ECBD63000D14A1 /* KySatViewController.h */,
 				39B1F3E118ECBD63000D14A1 /* KySatViewController.m */,
 				39B1F3E318ECBD63000D14A1 /* Images.xcassets */,
@@ -332,6 +344,7 @@
 				ORGANIZATIONNAME = "Matthew Fahrbach";
 				TargetAttributes = {
 					39B1F3C718ECBD62000D14A1 = {
+						DevelopmentTeam = CN523Q8468;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -384,14 +397,17 @@
 				39B1F3D618ECBD62000D14A1 /* InfoPlist.strings in Resources */,
 				3920450218FC8D2800BEC404 /* arrows.png in Resources */,
 				3920451618FC8D2800BEC404 /* mailtile.png in Resources */,
+				B12F261D192630C700D32EA8 /* page4.png in Resources */,
 				3920451B18FC8D2800BEC404 /* trackertile1.png in Resources */,
 				3920452018FC8D2800BEC404 /* unisattilepressed2.png in Resources */,
+				B12F261B192630C700D32EA8 /* page2.png in Resources */,
 				3920450318FC8D2800BEC404 /* bgtry.png in Resources */,
 				3920451818FC8D2800BEC404 /* plainbg.png in Resources */,
 				39B1F3DF18ECBD63000D14A1 /* Main.storyboard in Resources */,
 				3920451918FC8D2800BEC404 /* statictile.png in Resources */,
 				3920452118FC8D2800BEC404 /* wheelbg.png in Resources */,
 				3920450C18FC8D2800BEC404 /* fiftysatpic.png in Resources */,
+				B12F261C192630C700D32EA8 /* page3.png in Resources */,
 				3920450918FC8D2800BEC404 /* eagle2tile2.png in Resources */,
 				399C3BC718FD82DC00FC2BA1 /* bw_gradient.png in Resources */,
 				3920451418FC8D2800BEC404 /* kysat2tile2.png in Resources */,
@@ -402,6 +418,7 @@
 				3920451A18FC8D2800BEC404 /* tlogoqubepic.png in Resources */,
 				3920450A18FC8D2800BEC404 /* eagle2tilepressed2.png in Resources */,
 				3920451D18FC8D2800BEC404 /* tweettile.png in Resources */,
+				B12F261A192630C700D32EA8 /* page1.png in Resources */,
 				3920451218FC8D2800BEC404 /* kstransparenthdlogo.png in Resources */,
 				3920450518FC8D2800BEC404 /* contacttile2.png in Resources */,
 				3920451E18FC8D2800BEC404 /* unisattile2.png in Resources */,
@@ -424,10 +441,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B1F3E218ECBD63000D14A1 /* KySatViewController.m in Sources */,
-				B15C0A1A1924625200EB43BE /* PageContentViewController.m in Sources */,
+				B12F26141926302A00D32EA8 /* PageContentViewController.m in Sources */,
 				39B1F3D818ECBD62000D14A1 /* main.m in Sources */,
 				39B1F3DC18ECBD62000D14A1 /* KySatAppDelegate.m in Sources */,
-				B1927E081924D8C200CE3B62 /* ViewController.m in Sources */,
+				B12F26151926302A00D32EA8 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,11 +569,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KySat/KySat-Prefix.pch";
 				INFOPLIST_FILE = "KySat/KySat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -567,11 +587,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KySat/KySat-Prefix.pch";
 				INFOPLIST_FILE = "KySat/KySat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

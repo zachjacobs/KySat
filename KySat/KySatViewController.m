@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self preferredStatusBarStyle];
+    //[self preferredStatusBarStyle];
     
     //cache all images here and just display them instead of downloading them everytime.
 }

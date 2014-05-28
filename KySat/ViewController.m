@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  KySat
+//  PageViewDemo
 //
-//  Created by Zach Jacobs on 5/15/14.
+//  Created by Zach Jacobs on 5/19/14.
 //  Copyright (c) 2014 Matthew Fahrbach. All rights reserved.
 //
 
@@ -14,23 +14,12 @@
 
 @implementation ViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    // Create the data model
-    _pageTitles = @[@"Title 1", @"Title 2", @"Title 3", @"Title 4"];
-//    _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
+	// Create the data modelOver 200
+    _pageTitles = @[@"Title1", @"Title2", @"Title3", @"Title4"];
+    _pageImages = @[@"newbg1.png", @"page2.png", @"page3.png", @"page4.png"];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
@@ -46,11 +35,8 @@
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
     [self.pageViewController didMoveToParentViewController:self];
-    
-    
 
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -58,12 +44,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (IBAction)startWalkthrough:(id)sender {
-    PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
-}
+//- (IBAction)startWalkthrough:(id)sender {
+//
+//}
 
 - (PageContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
@@ -74,12 +57,11 @@
     // Create a new view controller and pass suitable data.
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
     pageContentViewController.imageFile = self.pageImages[index];
-    pageContentViewController.titleText = self.pageTitles[index];
+    pageContentViewController.titleLabel.text = self.pageTitles[index];
     pageContentViewController.pageIndex = index;
     
     return pageContentViewController;
 }
-
 
 #pragma mark - Page View Controller Data Source
 
@@ -110,7 +92,6 @@
     return [self viewControllerAtIndex:index];
 }
 
-
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
     return [self.pageTitles count];
@@ -121,15 +102,9 @@
     return 0;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)startWalkthrough:(id)sender {
+    PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    NSArray *viewControllers = @[startingViewController];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
 }
-*/
-
 @end
