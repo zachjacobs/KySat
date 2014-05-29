@@ -77,7 +77,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             /* This is the main thread again, where we set the tableView's image to
              be what we just fetched. */
-            vc.imageViewStatus.image = img;
+            self.imageViewStatus.image = img;
         });
     });
 }
