@@ -7,6 +7,7 @@
 //
 
 #import "KySatViewController.h"
+#define IS_WIDESCREEN ( [ [ UIScreen mainScreen ] bounds ].size.height == 568 )
 
 @interface KySatViewController ()
 
@@ -21,6 +22,31 @@
     //[self preferredStatusBarStyle];
     
     //cache all images here and just display them instead of downloading them everytime.
+}
+
+- (void)viewWillLayoutSubviews {
+
+    //must set these programatically to adjust to the button view.  A 3.5-inch screen must squeeze
+    //the buttons to ensure that everything will fit.  For some reason, we can't detect the
+    //button view height by using self.buttonViewHeight.constraint (it's always 150?)
+    //So we detect if we're using a 4" screen.  This is very dependent on the autolayout
+    //constraints
+    CGFloat buttonViewHeight = 0;
+    if(IS_WIDESCREEN)
+        buttonViewHeight = 150;
+    else
+        buttonViewHeight = 134;
+    
+    self.topLeftButtonHeight.constant = buttonViewHeight/2;
+    self.bottomLeftButtonHeight.constant = buttonViewHeight/2;
+    self.bottomRightButtonHeight.constant = buttonViewHeight/2;
+    self.topRightButtonHeight.constant = buttonViewHeight/2;
+    self.buttonGradientLeftConstraint.constant = buttonViewHeight;
+    self.buttonGradientRightConstraint.constant = buttonViewHeight;
+    
+    NSLog(@"Setting buttons to: %f",self.topLeftButtonHeight.constant);
+    
+    [super viewWillLayoutSubviews];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,9 +64,12 @@
     // http://stackoverflow.com/questions/15702608/faster-way-to-load-an-image-from-a-url-and-display-it-in-an-iphone-app
     dispatch_queue_t q = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     dispatch_async(q, ^{
+        
+        
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Mainstoryboard"
+                                                                 bundle: nil];
         //---update the UIViewController---
-        KySatViewController *vc = (KySatViewController *)
-            [[[UIApplication sharedApplication] keyWindow] rootViewController];
+        KySatViewController *vc = (KySatViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"KYSatVC"];
         /* Fetch the image from the server... */
         NSURL *url = [NSURL URLWithString:urlName];
         NSData *data = [NSData dataWithContentsOfURL:url];

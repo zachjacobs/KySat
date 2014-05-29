@@ -7,7 +7,7 @@
         <!--Ky Sat View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="KySatViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KYSatVC" id="vXZ-lx-hvc" customClass="KySatViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9w5-QC-1mC"/>
                         <viewControllerLayoutGuide type="bottom" id="Sqh-8n-AUm"/>
@@ -37,27 +37,30 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGO-jm-3nG" userLabel="View - button view">
-                                <rect key="frame" x="20" y="294" width="280" height="133"/>
+                                <rect key="frame" x="20" y="293" width="280" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.30000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bw_gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="sMg-ja-kOx">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="133"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="134"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="ko2-uX-KDa"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="o2F-xJ-kDv"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bw_gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-Ux-ZlE">
-                                        <rect key="frame" x="140" y="0.0" width="140" height="133"/>
+                                        <rect key="frame" x="140" y="0.0" width="140" height="134"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="8CA-qS-9el"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="hDP-oT-7jc"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxt-HQ-Hy1" userLabel="Button - K2">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="75"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="FI7-Af-cII"/>
                                             <constraint firstAttribute="width" constant="140" id="KY3-Zp-Rg3"/>
                                         </constraints>
                                         <state key="normal" image="kysat2tilepressed2.png"/>
@@ -67,7 +70,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7b-aD-qdu" userLabel="Button - $50">
-                                        <rect key="frame" x="0.0" y="58" width="140" height="75"/>
+                                        <rect key="frame" x="0.0" y="59" width="140" height="75"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="IfF-cH-43d"/>
@@ -82,7 +85,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFp-Ap-qYP" userLabel="Button - UniSat">
-                                        <rect key="frame" x="140" y="58" width="140" height="75"/>
+                                        <rect key="frame" x="140" y="59" width="140" height="75"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="DTZ-Ok-f5t"/>
@@ -157,7 +160,7 @@
                             <constraint firstItem="xKZ-m8-iTm" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="ZJJ-aL-Th9"/>
                             <constraint firstItem="Sqh-8n-AUm" firstAttribute="top" secondItem="KGO-jm-3nG" secondAttribute="bottom" constant="4" id="ZOq-o0-RXL"/>
                             <constraint firstAttribute="centerX" secondItem="KGO-jm-3nG" secondAttribute="centerX" id="h1s-pZ-Up0"/>
-                            <constraint firstItem="KGO-jm-3nG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Eaz-WL-zsf" secondAttribute="bottom" constant="4" id="myt-Uw-dqe"/>
+                            <constraint firstItem="KGO-jm-3nG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Eaz-WL-zsf" secondAttribute="bottom" constant="3" id="myt-Uw-dqe"/>
                             <constraint firstItem="ear-uo-4f3" firstAttribute="centerX" secondItem="Eaz-WL-zsf" secondAttribute="centerX" id="nSc-QS-cTV"/>
                             <constraint firstAttribute="centerX" secondItem="xKZ-m8-iTm" secondAttribute="centerX" id="sd9-bv-mKd"/>
                         </constraints>
@@ -165,11 +168,19 @@
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="KcL-v3-fhi"/>
                     <connections>
                         <outlet property="bottomLeftButton" destination="V7b-aD-qdu" id="DgS-Gv-0Xm"/>
+                        <outlet property="bottomLeftButtonHeight" destination="fBO-0K-Fqz" id="sgS-uk-EsR"/>
                         <outlet property="bottomRightButton" destination="AFp-Ap-qYP" id="j9m-ba-uXt"/>
+                        <outlet property="bottomRightButtonHeight" destination="DTZ-Ok-f5t" id="sKg-vW-5ba"/>
+                        <outlet property="buttonGradientLeftConstraint" destination="o2F-xJ-kDv" id="kMt-vd-KMS"/>
+                        <outlet property="buttonGradientRightConstraint" destination="hDP-oT-7jc" id="ePU-pf-odz"/>
+                        <outlet property="buttonView" destination="KGO-jm-3nG" id="dvM-dm-oR1"/>
+                        <outlet property="buttonViewHeight" destination="JMk-4Q-80y" id="RCP-ak-o22"/>
                         <outlet property="currentSatelliteLabel" destination="ear-uo-4f3" id="hc4-e4-7gb"/>
-                        <outlet property="imageViewStatus" destination="Eaz-WL-zsf" id="Jmj-fh-eRs"/>
+                        <outlet property="imageViewStatus" destination="Eaz-WL-zsf" id="thZ-Yf-cmb"/>
                         <outlet property="topLeftButton" destination="Xxt-HQ-Hy1" id="CKP-QP-1sA"/>
+                        <outlet property="topLeftButtonHeight" destination="FI7-Af-cII" id="Pe0-q7-NBX"/>
                         <outlet property="topRightButton" destination="RO9-Z0-nrp" id="d3F-Vq-JIf"/>
+                        <outlet property="topRightButtonHeight" destination="k7c-gb-VIq" id="4pE-gK-9vi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
