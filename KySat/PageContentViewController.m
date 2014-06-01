@@ -26,10 +26,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.backgroundImageView.image = [UIImage imageNamed:self.backgroundImageFile];
+    
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+    pageControl.backgroundColor = [UIColor clearColor];
+    
+    //Refresh all UI elements on the view that loaded
+    //self.backgroundImageView.image = [UIImage imageNamed:self.backgroundImageFile];
+    //Set the titleLabel to wrap if the titles are too long
+    self.storyImageView.image = [UIImage imageNamed:self.storyImageFile];
+    self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    self.titleLabel.numberOfLines = 0;
     self.titleLabel.text = self.storyTitleText;
-
+    self.storyTextView.text = self.storyText;
 }
 
 - (void)didReceiveMemoryWarning

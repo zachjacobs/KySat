@@ -44,8 +44,6 @@
     self.buttonGradientLeftConstraint.constant = buttonViewHeight;
     self.buttonGradientRightConstraint.constant = buttonViewHeight;
     
-    NSLog(@"Setting buttons to: %f",self.topLeftButtonHeight.constant);
-    
     [super viewWillLayoutSubviews];
 }
 
