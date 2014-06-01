@@ -19,18 +19,19 @@
     [super viewDidLoad];
 	// Create the data modelOver 200
     _pageTitles = @[@"Title1", @"Title2", @"Title3", @"Title4"];
-    _pageImages = @[@"newbg1.png", @"page2.png", @"page3.png", @"page4.png"];
+    _pageImages = @[@"newbg1.png", @"newbg1.png", @"newbg1.png", @"newbg1.png"];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
     
+    //set up an array of page content view controllers
     PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
@@ -56,8 +57,8 @@
     
     // Create a new view controller and pass suitable data.
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
-    pageContentViewController.imageFile = self.pageImages[index];
-    pageContentViewController.titleLabel.text = self.pageTitles[index];
+    pageContentViewController.backgroundImageFile = self.pageImages[index];
+    pageContentViewController.storyTitleText = self.pageTitles[index];
     pageContentViewController.pageIndex = index;
     
     return pageContentViewController;

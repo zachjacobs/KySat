@@ -11,7 +11,13 @@
 @interface PageContentViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *storyImageView;
+@property (strong, nonatomic) IBOutlet UITextView *storyTextView;
+
 @property NSUInteger pageIndex;
-@property NSString *titleText;
-@property NSString *imageFile;
+@property NSString *backgroundImageFile;
+@property NSString *storyImageFile;
+@property NSString *storyTitleText;
+@property NSString *storyText;
+
 @end
