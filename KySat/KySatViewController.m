@@ -66,10 +66,10 @@
     dispatch_async(q, ^{
         
         
-        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Mainstoryboard"
-                                                                 bundle: nil];
-        //---update the UIViewController---
-        KySatViewController *vc = (KySatViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"KYSatVC"];
+//        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Mainstoryboard"
+//                                                                 bundle: nil];
+//        //---update the UIViewController---
+//        KySatViewController *vc = (KySatViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"KYSatVC"];
         /* Fetch the image from the server... */
         NSURL *url = [NSURL URLWithString:urlName];
         NSData *data = [NSData dataWithContentsOfURL:url];
