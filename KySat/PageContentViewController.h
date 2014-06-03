@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface PageContentViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *storyImageView;
 @property (strong, nonatomic) IBOutlet UITextView *storyTextView;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *storyImageHeightConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *storyImageWidthConstraint;
+
 
 @property NSUInteger pageIndex;
 @property NSString *backgroundImageFile;

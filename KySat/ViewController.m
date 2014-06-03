@@ -19,10 +19,10 @@
     [super viewDidLoad];
 	// Create the data modelOver 200
     _pageTitles = @[@"About Kentucky Space", @"Kentucky Space and Partner Satellites in Orbit", @"Kentucky Space and partner Satellites in Orbit", @"Kentucky Space and Partner Satellites in Orbit", @"Kentucky Space and Partner Satellites in Orbit", @"What can we learn by removing gravity from the equation?", @"Exomedicine Research"];
-    _pageStoryImages = @[@"kstlogo.png",
-                         @"kysat2tile2.png",
-                         @"eagle1tile2.png",
-                         @"eagle2tile2.png",
+    _pageStoryImages = @[@"kstransparenthdlogo.png",
+                         @"kysat2pic.png",
+                         @"tlogoqubepic.png",
+                         @"fiftysatpic.png",
                          @"cxbnpic.png",
                          @"exomedlogo.png",
                          @"exomedlogo.png"];

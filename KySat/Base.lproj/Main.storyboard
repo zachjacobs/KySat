@@ -209,10 +209,10 @@
             </objects>
             <point key="canvasLocation" x="111" y="351"/>
         </scene>
-        <!--View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="tTP-Dg-XLt">
             <objects>
-                <viewController id="2Sy-2r-aeo" sceneMemberID="viewController">
+                <viewController id="2Sy-2r-aeo" customClass="HelpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fQi-HF-081"/>
                         <viewControllerLayoutGuide type="bottom" id="mKA-nD-Taf"/>
@@ -235,6 +235,9 @@
                                 <state key="normal" title="Button" image="statictile.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="satTrackerButtonClick:" destination="2Sy-2r-aeo" eventType="touchUpInside" id="X3G-pf-fce"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="This button launches the @KentuckySpace twitter feed" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-t2-79J">
                                 <rect key="frame" x="120" y="233" width="173" height="67"/>
@@ -258,6 +261,9 @@
                                 <state key="normal" title="Button" image="tweettile.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tweetButtonClick:" destination="2Sy-2r-aeo" eventType="touchUpInside" id="1Js-A4-rfW"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="This button launches a static tracker.  This tracker displays the current position of all Kentucky Satellites" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-J0-mU5">
                                 <rect key="frame" x="120" y="314" width="180" height="100"/>
@@ -274,6 +280,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiJ-jA-Od1" userLabel="Button - Email">
                                 <rect key="frame" x="20" y="118" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="S19-Td-Ihz"/>
                                     <constraint firstAttribute="height" constant="100" id="ztA-jJ-Hej"/>
@@ -281,6 +290,9 @@
                                 <state key="normal" title="Button" image="mailtile.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="emailButtonClick:" destination="2Sy-2r-aeo" eventType="touchUpInside" id="v9b-az-1uB"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Click here to email Kentucky Space  " translatesAutoresizingMaskIntoConstraints="NO" id="iXm-Mc-Nb8">
                                 <rect key="frame" x="120" y="140" width="180" height="55"/>
@@ -304,6 +316,9 @@
                                 <state key="normal" title="Button" image="infotile1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="helpButtonClick:" destination="2Sy-2r-aeo" eventType="touchUpInside" id="Mlf-xG-Seg"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="This button launches the Kentucky Space information page" translatesAutoresizingMaskIntoConstraints="NO" id="gK5-No-36d">
                                 <rect key="frame" x="120" y="36" width="180" height="67"/>
@@ -361,12 +376,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="UM3-YU-H8V">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="UM3-YU-H8V">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="19g-2w-jBq"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="UM3-YU-H8V" secondAttribute="centerY" constant="-14.5" id="B57-0T-iU5"/>
+                            <constraint firstAttribute="centerX" secondItem="UM3-YU-H8V" secondAttribute="centerX" id="VoP-nS-STJ"/>
+                            <constraint firstItem="gEC-cB-X8M" firstAttribute="top" secondItem="UM3-YU-H8V" secondAttribute="bottom" constant="-29" id="dhk-bz-8oB"/>
+                            <constraint firstItem="UM3-YU-H8V" firstAttribute="top" secondItem="G7W-En-mTi" secondAttribute="bottom" constant="-20" id="yLw-hf-NCO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="w4p-6z-CQ1"/>
                 </viewController>
@@ -440,11 +464,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qqg-cj-MYe">
-                                <rect key="frame" x="40" y="29" width="240" height="128"/>
+                                <rect key="frame" x="20" y="29" width="280" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="AUu-hg-Joo"/>
-                                    <constraint firstAttribute="width" constant="240" id="uRT-QV-X5v"/>
+                                    <constraint firstAttribute="width" constant="280" id="uRT-QV-X5v"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Test Text" translatesAutoresizingMaskIntoConstraints="NO" id="UOb-hv-tr3">
@@ -475,7 +499,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="storyImageHeightConstraint" destination="AUu-hg-Joo" id="TbR-9O-LAh"/>
                         <outlet property="storyImageView" destination="Qqg-cj-MYe" id="CzJ-CD-U1S"/>
+                        <outlet property="storyImageWidthConstraint" destination="uRT-QV-X5v" id="JRN-3o-h7S"/>
                         <outlet property="storyTextView" destination="UOb-hv-tr3" id="Ze8-au-dGX"/>
                         <outlet property="titleLabel" destination="sa5-XN-xGy" id="zGj-tt-UXj"/>
                     </connections>
