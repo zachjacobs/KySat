@@ -202,7 +202,7 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="V7F-cV-DPb"/>
                         <segue destination="2Sy-2r-aeo" kind="relationship" relationship="viewControllers" id="JnO-Mw-vtG"/>
                         <segue destination="65c-z0-KQz" kind="relationship" relationship="viewControllers" id="fkj-rC-Lo8"/>
-                        <segue destination="Any-Te-K35" kind="relationship" relationship="viewControllers" id="zvw-Gm-OUh"/>
+                        <segue destination="Any-Te-K35" kind="relationship" relationship="viewControllers" id="9BM-zm-qEH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eya-cq-spI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -407,6 +407,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="CZQ-KN-Zhu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -414,8 +415,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EM7-S6-lVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Cs9-RX-kzQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="714" y="1739"/>
+            <point key="canvasLocation" x="111" y="979"/>
         </scene>
         <!--Page Content View Controller-->
         <scene sceneID="uJa-4w-Ypg">

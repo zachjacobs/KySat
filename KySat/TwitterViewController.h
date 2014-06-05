@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TwitterViewController : UITableViewController
+
+@property (nonatomic, strong) NSArray *statuses;
 @property (strong, nonatomic) IBOutlet UITableView *TableView;
 
 @end
