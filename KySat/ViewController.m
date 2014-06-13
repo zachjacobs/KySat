@@ -19,13 +19,13 @@
     [super viewDidLoad];
 	// Create the data modelOver 200
     _pageTitles = @[@"About Kentucky Space", @"Kentucky Space and Partner Satellites in Orbit", @"Kentucky Space and partner Satellites in Orbit", @"Kentucky Space and Partner Satellites in Orbit", @"Kentucky Space and Partner Satellites in Orbit", @"What can we learn by removing gravity from the equation?", @"Exomedicine Research"];
-    _pageStoryImages = @[@"kstransparenthdlogo.png",
-                         @"kysat2pic.png",
-                         @"tlogoqubepic.png",
-                         @"fiftysatpic.png",
-                         @"cxbnpic.png",
-                         @"exomedlogo.png",
-                         @"exomedlogo.png"];
+    _pageStoryImages = @[@"kstransparenthdlogo_scaled.png",
+                         @"kysat2pic_scaled.png",
+                         @"tlogoqubepic_scaled.png",
+                         @"fiftysatpic_scaled.png",
+                         @"cxbnpic_scaled.png",
+                         @"exomedlogo_scaled.png",
+                         @"exomedlogo_scaled.png"];
     
     _pageStories = @[@"Kentucky Space LLC is an ambitions, non-profit enterprise focused on R and D, educational, small entrepreneurial and commercial space solutions.\n\n Swipe to continue.",
                      @"KySat-2 (Kentucky Satellite 2)\nLaunched: 11/19/2013 from Wallops Island Virginia\nOrbit: 500 km x 40.6 degree inclination\nKySat-2 is a 1U CubeSat fulfilling the original educational outreach and technology demonstrator goals of KySat-1 while additionally testing an attitude determination system that uses the satellite's existing camera.  The spacecraft transmitted at 437.405 MHz and can be tracked by amateur radio stations.",

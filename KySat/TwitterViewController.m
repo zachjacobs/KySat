@@ -40,7 +40,10 @@
     self.refreshControl = [[UIRefreshControl alloc]init];
     [self.TableView addSubview:self.refreshControl];
     [self.refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
+
+    self.TableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"newbg1.png"]];
     
+    self.TableView.backgroundColor = [UIColor clearColor];
     [self refreshTable];
 }
 
@@ -101,8 +104,10 @@
 
     cell.textLabel.text = text;
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
+
     cell.textLabel.numberOfLines = 0;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"@%@ | %@", screenName, dateString];
+    cell.backgroundColor = [UIColor clearColor];
     
     UITapGestureRecognizer *gestureRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openUrl:)];
     gestureRec.numberOfTouchesRequired = 1;

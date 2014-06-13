@@ -36,6 +36,10 @@
     //self.backgroundImageView.image = [UIImage imageNamed:self.backgroundImageFile];
     //Set the titleLabel to wrap if the titles are too long
     self.storyImageView.image = [UIImage imageNamed:self.storyImageFile];
+
+    //Change the size of the UIImageView to match the source image height and width
+    self.storyImageHeightConstraint.constant = self.storyImageView.image.size.height;
+    self.storyImageWidthConstraint.constant = self.storyImageView.image.size.width;
     self.storyImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     self.titleLabel.numberOfLines = 0;

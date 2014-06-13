@@ -59,6 +59,12 @@
 		B12F26141926302A00D32EA8 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12F26111926302A00D32EA8 /* PageContentViewController.m */; };
 		B12F26151926302A00D32EA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12F26131926302A00D32EA8 /* ViewController.m */; };
 		B166AE90193D5AAD00E32D5C /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B166AE8F193D5AAD00E32D5C /* TwitterViewController.m */; };
+		B1A81EE2194A8DE000884C2F /* cxbnpic_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A81EDD194A8DE000884C2F /* cxbnpic_scaled.png */; };
+		B1A81EE3194A8DE000884C2F /* exomedlogo_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A81EDE194A8DE000884C2F /* exomedlogo_scaled.png */; };
+		B1A81EE4194A8DE000884C2F /* fiftysatpic_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A81EDF194A8DE000884C2F /* fiftysatpic_scaled.png */; };
+		B1A81EE5194A8DE000884C2F /* kysat2pic_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A81EE0194A8DE000884C2F /* kysat2pic_scaled.png */; };
+		B1A81EE6194A8DE000884C2F /* tlogoqubepic_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A81EE1194A8DE000884C2F /* tlogoqubepic_scaled.png */; };
+		B1A81EE8194A907D00884C2F /* kstransparenthdlogo_scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A81EE7194A907D00884C2F /* kstransparenthdlogo_scaled.png */; };
 		B1D995D5193D4CE500EBD944 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D995D4193D4CE500EBD944 /* HelpViewController.m */; };
 		B1D99658193D505800EBD944 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B1D995D7193D505800EBD944 /* .travis.yml */; };
 		B1D99659193D505800EBD944 /* ios.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D995D9193D505800EBD944 /* ios.png */; };
@@ -156,6 +162,12 @@
 		B12F26131926302A00D32EA8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B166AE8E193D5AAD00E32D5C /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		B166AE8F193D5AAD00E32D5C /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		B1A81EDD194A8DE000884C2F /* cxbnpic_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cxbnpic_scaled.png; sourceTree = "<group>"; };
+		B1A81EDE194A8DE000884C2F /* exomedlogo_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exomedlogo_scaled.png; sourceTree = "<group>"; };
+		B1A81EDF194A8DE000884C2F /* fiftysatpic_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fiftysatpic_scaled.png; sourceTree = "<group>"; };
+		B1A81EE0194A8DE000884C2F /* kysat2pic_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kysat2pic_scaled.png; sourceTree = "<group>"; };
+		B1A81EE1194A8DE000884C2F /* tlogoqubepic_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tlogoqubepic_scaled.png; sourceTree = "<group>"; };
+		B1A81EE7194A907D00884C2F /* kstransparenthdlogo_scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kstransparenthdlogo_scaled.png; sourceTree = "<group>"; };
 		B1D995D3193D4CE500EBD944 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		B1D995D4193D4CE500EBD944 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		B1D995D7193D505800EBD944 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -239,6 +251,12 @@
 		392044E118FC8D2800BEC404 /* drawable-hdpi */ = {
 			isa = PBXGroup;
 			children = (
+				B1A81EE7194A907D00884C2F /* kstransparenthdlogo_scaled.png */,
+				B1A81EDD194A8DE000884C2F /* cxbnpic_scaled.png */,
+				B1A81EDE194A8DE000884C2F /* exomedlogo_scaled.png */,
+				B1A81EDF194A8DE000884C2F /* fiftysatpic_scaled.png */,
+				B1A81EE0194A8DE000884C2F /* kysat2pic_scaled.png */,
+				B1A81EE1194A8DE000884C2F /* tlogoqubepic_scaled.png */,
 				392044E218FC8D2800BEC404 /* arrows.png */,
 				392044E318FC8D2800BEC404 /* bgtry.png */,
 				392044E418FC8D2800BEC404 /* calltile.png */,
@@ -514,7 +532,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3920450D18FC8D2800BEC404 /* helptile.png in Resources */,
+				B1A81EE8194A907D00884C2F /* kstransparenthdlogo_scaled.png in Resources */,
 				3920451718FC8D2800BEC404 /* newbg1.png in Resources */,
+				B1A81EE5194A8DE000884C2F /* kysat2pic_scaled.png in Resources */,
 				3920451118FC8D2800BEC404 /* kstlogo.png in Resources */,
 				3920451C18FC8D2800BEC404 /* transparentkslogo.png in Resources */,
 				390C9BE7190DD306003766F1 /* launch_image_2x.png in Resources */,
@@ -523,6 +543,7 @@
 				39B1F3E418ECBD63000D14A1 /* Images.xcassets in Resources */,
 				3920450418FC8D2800BEC404 /* calltile.png in Resources */,
 				3920450818FC8D2800BEC404 /* eagle1tilepressed2.png in Resources */,
+				B1A81EE4194A8DE000884C2F /* fiftysatpic_scaled.png in Resources */,
 				390C9BE8190DD306003766F1 /* launch_image_r4.png in Resources */,
 				3920450E18FC8D2800BEC404 /* ic_launcher.png in Resources */,
 				3920450B18FC8D2800BEC404 /* exomedlogo.png in Resources */,
@@ -533,6 +554,7 @@
 				3920451B18FC8D2800BEC404 /* trackertile1.png in Resources */,
 				3920452018FC8D2800BEC404 /* unisattilepressed2.png in Resources */,
 				3920450318FC8D2800BEC404 /* bgtry.png in Resources */,
+				B1A81EE3194A8DE000884C2F /* exomedlogo_scaled.png in Resources */,
 				3920451818FC8D2800BEC404 /* plainbg.png in Resources */,
 				39B1F3DF18ECBD63000D14A1 /* Main.storyboard in Resources */,
 				3920451918FC8D2800BEC404 /* statictile.png in Resources */,
@@ -542,6 +564,7 @@
 				399C3BC718FD82DC00FC2BA1 /* bw_gradient.png in Resources */,
 				B1D99658193D505800EBD944 /* .travis.yml in Resources */,
 				B1D99679193D505800EBD944 /* README.md in Resources */,
+				B1A81EE2194A8DE000884C2F /* cxbnpic_scaled.png in Resources */,
 				3920451418FC8D2800BEC404 /* kysat2tile2.png in Resources */,
 				B1D9965B193D505800EBD944 /* tweet.png in Resources */,
 				B1D99678193D505800EBD944 /* LICENCE.txt in Resources */,
@@ -558,6 +581,7 @@
 				3920451218FC8D2800BEC404 /* kstransparenthdlogo.png in Resources */,
 				3920450518FC8D2800BEC404 /* contacttile2.png in Resources */,
 				3920451E18FC8D2800BEC404 /* unisattile2.png in Resources */,
+				B1A81EE6194A8DE000884C2F /* tlogoqubepic_scaled.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
