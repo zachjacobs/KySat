@@ -41,9 +41,13 @@
     [self.TableView addSubview:self.refreshControl];
     [self.refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
 
-    self.TableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"newbg1.png"]];
+//    self.table
     
-    self.TableView.backgroundColor = [UIColor clearColor];
+    self.TableView.backgroundView = nil;
+    //self.TableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"newbg1.png"]];
+    
+    
+    self.TableView.backgroundColor = [UIColor darkGrayColor];
     [self refreshTable];
 }
 
@@ -51,7 +55,7 @@
 - (void)refreshTable {
     //TODO: refresh your data
     
-    STTwitterAPI *twitter = [STTwitterAPI twitterAPIAppOnlyWithConsumerKey:@"PdLBPYUXlhQpt4AguShUIw" consumerSecret:@"drdhGuKSingTbsDLtYpob4m5b5dn1abf9XXYyZKQzk"];
+    STTwitterAPI *twitter = [STTwitterAPI twitterAPIAppOnlyWithConsumerKey:@"Le898YaM5BluxwdcUQop4w" consumerSecret:@"BRO8RiAPgiFvyR1fh9OXFo6vlYNNy2LelVrmTbwE"];
     [twitter verifyCredentialsWithSuccessBlock:^(NSString *bearerToken) {
         
         NSLog(@"Access granted with %@", bearerToken);
@@ -62,7 +66,7 @@
             
             self.statuses = statuses;
             
-            [self.tableView reloadData];
+            [self.TableView reloadData];
         } errorBlock:^(NSError *error) {
             NSLog(@"-- error: %@", error);
         }];
@@ -100,19 +104,19 @@
     NSString *screenName = [status valueForKeyPath:@"user.screen_name"];
     NSString *dateString = [status valueForKey:@"created_at"];
 
+    cell.textLabel.text = text;
+    cell.textLabel.textColor = [UIColor lightGrayColor];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
+    cell.textLabel.numberOfLines = 0;
     
 
-    cell.textLabel.text = text;
-    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
-
-    cell.textLabel.numberOfLines = 0;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"@%@ | %@", screenName, dateString];
     cell.backgroundColor = [UIColor clearColor];
     
-    UITapGestureRecognizer *gestureRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openUrl:)];
-    gestureRec.numberOfTouchesRequired = 1;
-    gestureRec.numberOfTapsRequired = 1;
-    [cell addGestureRecognizer:gestureRec];
+//    UITapGestureRecognizer *gestureRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openUrl:)];
+//    gestureRec.numberOfTouchesRequired = 1;
+//    gestureRec.numberOfTapsRequired = 1;
+//    [cell addGestureRecognizer:gestureRec];
     [cell setUserInteractionEnabled:YES];
     
     return cell;
@@ -137,7 +141,6 @@
     NSDictionary *status = [self.statuses objectAtIndex:indexPath.row];
     
     NSString *cellText = [status valueForKey:@"text"];
-    
     UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:14.0];
     
     NSAttributedString *attributedText =
@@ -147,32 +150,10 @@
      {
      NSFontAttributeName: cellFont
      }];
-    CGRect rect = [attributedText boundingRectWithSize:CGSizeMake(tableView.bounds.size.width, CGFLOAT_MAX)
+    CGRect rect = [attributedText boundingRectWithSize:CGSizeMake(self.TableView.bounds.size.width, CGFLOAT_MAX)
                                                options:NSStringDrawingUsesLineFragmentOrigin
                                                context:nil];
     return rect.size.height + 40;
 }
-
-//-(CGFloat)heightForText:(NSString *)text
-//{
-//    NSInteger MAX_HEIGHT = 2000;
-//    UITextView * textView = [[UITextView alloc] initWithFrame: CGRectMake(0, 0, 320.0, MAX_HEIGHT)];
-//    textView.text = text;
-//    textView.font = [UIFont systemFontOfSize:14];
-//    [textView sizeToFit];
-//    NSLog(@"height: %f",textView.frame.size.height);
-//    return textView.frame.size.height;
-//}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

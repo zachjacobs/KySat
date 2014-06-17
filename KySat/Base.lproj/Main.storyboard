@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="poz-wI-XU4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="poz-wI-XU4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Ky Sat View Controller-->
+        <!--Ky Sat View Controller - Sat Track-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="KYSatVC" id="vXZ-lx-hvc" customClass="KySatViewController" sceneMemberID="viewController">
@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Sqh-8n-AUm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="xKZ-m8-iTm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kstransparenthdlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ptq-Lv-zXJ">
@@ -37,11 +37,11 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGO-jm-3nG" userLabel="View - button view">
-                                <rect key="frame" x="20" y="293" width="280" height="134"/>
+                                <rect key="frame" x="20" y="365" width="280" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.30000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bw_gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="sMg-ja-kOx">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="134"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="150"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="ko2-uX-KDa"/>
@@ -49,7 +49,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bw_gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-Ux-ZlE">
-                                        <rect key="frame" x="140" y="0.0" width="140" height="134"/>
+                                        <rect key="frame" x="140" y="0.0" width="140" height="150"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="8CA-qS-9el"/>
@@ -70,7 +70,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7b-aD-qdu" userLabel="Button - $50">
-                                        <rect key="frame" x="0.0" y="59" width="140" height="75"/>
+                                        <rect key="frame" x="0.0" y="75" width="140" height="75"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="IfF-cH-43d"/>
@@ -85,7 +85,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFp-Ap-qYP" userLabel="Button - UniSat">
-                                        <rect key="frame" x="140" y="59" width="140" height="75"/>
+                                        <rect key="frame" x="140" y="75" width="140" height="75"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="DTZ-Ok-f5t"/>
@@ -165,7 +165,7 @@
                             <constraint firstAttribute="centerX" secondItem="xKZ-m8-iTm" secondAttribute="centerX" id="sd9-bv-mKd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="KcL-v3-fhi"/>
+                    <tabBarItem key="tabBarItem" title="Sat Track" image="staticTrackTile" id="KcL-v3-fhi"/>
                     <connections>
                         <outlet property="bottomLeftButton" destination="V7b-aD-qdu" id="DgS-Gv-0Xm"/>
                         <outlet property="bottomLeftButtonHeight" destination="fBO-0K-Fqz" id="sgS-uk-EsR"/>
@@ -209,7 +209,7 @@
             </objects>
             <point key="canvasLocation" x="111" y="351"/>
         </scene>
-        <!--Help View Controller-->
+        <!--Help View Controller - Help-->
         <scene sceneID="tTP-Dg-XLt">
             <objects>
                 <viewController id="2Sy-2r-aeo" customClass="HelpViewController" sceneMemberID="viewController">
@@ -218,11 +218,11 @@
                         <viewControllerLayoutGuide type="bottom" id="mKA-nD-Taf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hhb-Sb-4vU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ndv-bz-M5U">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoX-dA-aCV" userLabel="Button - Sat Track">
@@ -357,14 +357,14 @@
                             <constraint firstItem="Ot6-TL-FEN" firstAttribute="leading" secondItem="hhb-Sb-4vU" secondAttribute="leading" constant="20" id="qed-bJ-8i3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="6Mr-DS-hPc"/>
+                    <tabBarItem key="tabBarItem" title="Help" image="helpIcon" id="6Mr-DS-hPc"/>
                     <size key="freeformSize" width="320" height="700"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SES-A8-h98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="707" y="332"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Info-->
         <scene sceneID="AeN-KN-aNV">
             <objects>
                 <viewController id="65c-z0-KQz" customClass="ViewController" sceneMemberID="viewController">
@@ -373,11 +373,11 @@
                         <viewControllerLayoutGuide type="bottom" id="gEC-cB-X8M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Wtt-bH-7eJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="UM3-YU-H8V">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="19g-2w-jBq"/>
@@ -392,23 +392,23 @@
                             <constraint firstItem="UM3-YU-H8V" firstAttribute="top" secondItem="G7W-En-mTi" secondAttribute="bottom" constant="-20" id="yLw-hf-NCO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="w4p-6z-CQ1"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="infoTile" id="w4p-6z-CQ1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljv-Mn-9tB" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="714" y="1078"/>
         </scene>
-        <!--Twitter View Controller-->
+        <!--Twitter View Controller - Twitter-->
         <scene sceneID="ovG-wE-0vj">
             <objects>
                 <viewController id="Any-Te-K35" customClass="TwitterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JLG-cD-y1Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="CZQ-KN-Zhu"/>
+                    <tabBarItem key="tabBarItem" title="Twitter" image="twitterTile" id="CZQ-KN-Zhu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="TableView" destination="JLG-cD-y1Z" id="jkt-4s-6XP"/>
@@ -432,7 +432,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6n9-bX-bBB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YTO-pf-srD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa5-XN-xGy">
@@ -454,7 +454,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Test Text" translatesAutoresizingMaskIntoConstraints="NO" id="UOb-hv-tr3">
-                                <rect key="frame" x="24" y="185" width="271" height="293"/>
+                                <rect key="frame" x="24" y="185" width="271" height="381"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -507,14 +507,18 @@
         <image name="eagle1tilepressed2.png" width="512" height="412"/>
         <image name="eagle2tile2.png" width="512" height="412"/>
         <image name="eagle2tilepressed2.png" width="512" height="412"/>
+        <image name="helpIcon" width="30" height="30"/>
+        <image name="infoTile" width="30" height="30"/>
         <image name="infotile1.png" width="512" height="412"/>
         <image name="kstransparenthdlogo.png" width="1410" height="695"/>
         <image name="kysat2tile2.png" width="512" height="412"/>
         <image name="kysat2tilepressed2.png" width="512" height="412"/>
         <image name="mailtile.png" width="512" height="412"/>
         <image name="newbg1.png" width="992" height="1288"/>
+        <image name="staticTrackTile" width="30" height="30"/>
         <image name="statictile.png" width="512" height="412"/>
         <image name="tweettile.png" width="512" height="412"/>
+        <image name="twitterTile" width="30" height="30"/>
         <image name="unisattile2.png" width="512" height="412"/>
         <image name="unisattilepressed2.png" width="512" height="412"/>
     </resources>
@@ -522,6 +526,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
