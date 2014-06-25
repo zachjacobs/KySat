@@ -41,14 +41,16 @@
     [self.TableView addSubview:self.refreshControl];
     [self.refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
 
-//    self.table
-    
     self.TableView.backgroundView = nil;
     //self.TableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"newbg1.png"]];
     
     
-    self.TableView.backgroundColor = [UIColor darkGrayColor];
+    self.TableView.backgroundColor = [UIColor blackColor];
     [self refreshTable];
+    
+    //used to push the content down below the status bar when the view loads
+    self.TableView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f);
+
 }
 
 
@@ -100,38 +102,86 @@
     
     NSDictionary *status = [self.statuses objectAtIndex:indexPath.row];
     
-    NSString *text = [status valueForKey:@"text"];
-    NSString *screenName = [status valueForKeyPath:@"user.screen_name"];
+//    NSString *text = [status valueForKey:@"text"];
+
+
+//    cell.textLabel.text = text;
+//    cell.textLabel.textColor = [UIColor whiteColor];
+//    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
+//    cell.textLabel.numberOfLines = 0;
+    
+    
+//    NSAttributedString *attributedText =
+//    [[NSAttributedString alloc]
+//     initWithString:string
+//     attributes:@
+//     {
+//     NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:14.0]
+//     }];
+    
+//    NSAttributedString *screenNameDateString =
+//    [[NSAttributedString alloc]
+//     initWithString:[NSString stringWithFormat:@"@%@ | %@", screenName, dateString]
+//     attributes:@
+//     {
+//     NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:14.0]
+//     }];
+    
+    
+    //http://stackoverflow.com/a/22588946
+    
+
+    
+    
+    
+    NSString *statusString = [status valueForKey:@"text"];
+    NSString *screenNameString = [status valueForKeyPath:@"user.screen_name"];
     NSString *dateString = [status valueForKey:@"created_at"];
+    NSString *detailsString = [NSString stringWithFormat:@"@%@ | %@", screenNameString, dateString];
+    
+    NSString *yourString = [NSString stringWithFormat:@"%@\n%@", statusString, detailsString];
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:yourString];
+    
+    [attrString beginEditing];
+    [attrString addAttribute:NSFontAttributeName
+                       value:[UIFont fontWithName:@"Helvetica" size:14.0]
+                       range:NSMakeRange(0, [statusString length])];
+    
+    [attrString addAttribute:NSForegroundColorAttributeName
+                       value:[UIColor whiteColor]
+                       range:NSMakeRange(0, [statusString length])];
+    
+    
+    [attrString addAttribute:NSFontAttributeName
+                       value:[UIFont fontWithName:@"Helvetica" size:10.0]
+                       range:NSMakeRange([statusString length] + 1, [detailsString length])];
+    
+    [attrString addAttribute:NSForegroundColorAttributeName
+                       value:[UIColor grayColor]
+                       range:NSMakeRange([statusString length] + 1, [detailsString length])];
+    
+    [attrString endEditing];
+    
+    CGRect stringSize = [attrString boundingRectWithSize:CGSizeMake(self.TableView.bounds.size.width, CGFLOAT_MAX)
+                                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                                     context:nil];
+    
+    
+    UITextView *textV=[[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.TableView.bounds.size.width, stringSize.size.height+40)];
+    
+    //Set the following properties to make the links clickable
+    textV.editable=NO;
+    textV.selectable=YES;
+    textV.scrollEnabled=NO;
+    textV.dataDetectorTypes = UIDataDetectorTypeLink;
+    
+    //Don't set a color here, rely on the attributes that were set on the attributed text above
+    textV.attributedText = attrString;
+    textV.backgroundColor = [UIColor blackColor];
+    
+    [cell.contentView addSubview:textV];
 
-    cell.textLabel.text = text;
-    cell.textLabel.textColor = [UIColor lightGrayColor];
-    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
-    cell.textLabel.numberOfLines = 0;
-    
-
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"@%@ | %@", screenName, dateString];
-    cell.backgroundColor = [UIColor clearColor];
-    
-//    UITapGestureRecognizer *gestureRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openUrl:)];
-//    gestureRec.numberOfTouchesRequired = 1;
-//    gestureRec.numberOfTapsRequired = 1;
-//    [cell addGestureRecognizer:gestureRec];
-    [cell setUserInteractionEnabled:YES];
-    
     return cell;
-}
-
-//TODO: This doesn't actually open a hyperlink just yet 
-- (void)openUrl:(id)sender
-{
-    UIGestureRecognizer *rec = (UIGestureRecognizer *)sender;
-    
-    id hitLabel = [self.view hitTest:[rec locationInView:self.view] withEvent:UIEventTypeTouches];
-    
-    if ([hitLabel isKindOfClass:[UITableViewCell class]]) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:((UILabel *)hitLabel).text]];
-    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -140,19 +190,54 @@
     
     NSDictionary *status = [self.statuses objectAtIndex:indexPath.row];
     
-    NSString *cellText = [status valueForKey:@"text"];
-    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:14.0];
+//    NSString *cellText = [status valueForKey:@"text"];
+//    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:14.0];
+//    
+//    NSAttributedString *attributedText =
+//    [[NSAttributedString alloc]
+//     initWithString:cellText
+//     attributes:@
+//     {
+//     NSFontAttributeName: cellFont
+//     }];
+//    CGRect rect = [attributedText boundingRectWithSize:CGSizeMake(self.TableView.bounds.size.width, CGFLOAT_MAX)
+//                                               options:NSStringDrawingUsesLineFragmentOrigin
+//                                               context:nil];
     
-    NSAttributedString *attributedText =
-    [[NSAttributedString alloc]
-     initWithString:cellText
-     attributes:@
-     {
-     NSFontAttributeName: cellFont
-     }];
-    CGRect rect = [attributedText boundingRectWithSize:CGSizeMake(self.TableView.bounds.size.width, CGFLOAT_MAX)
-                                               options:NSStringDrawingUsesLineFragmentOrigin
-                                               context:nil];
+    NSString *statusString = [status valueForKey:@"text"];
+    NSString *screenNameString = [status valueForKeyPath:@"user.screen_name"];
+    NSString *dateString = [status valueForKey:@"created_at"];
+    NSString *detailsString = [NSString stringWithFormat:@"@%@ | %@", screenNameString, dateString];
+    
+    NSString *yourString = [NSString stringWithFormat:@"%@\n%@", statusString, detailsString];
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:yourString];
+    
+    [attrString beginEditing];
+    [attrString addAttribute:NSFontAttributeName
+                       value:[UIFont fontWithName:@"Helvetica" size:14.0]
+                       range:NSMakeRange(0, [statusString length])];
+    
+    [attrString addAttribute:NSForegroundColorAttributeName
+                       value:[UIColor whiteColor]
+                       range:NSMakeRange(0, [statusString length])];
+    
+    
+    [attrString addAttribute:NSFontAttributeName
+                       value:[UIFont fontWithName:@"Helvetica" size:10.0]
+                       range:NSMakeRange([statusString length] + 1, [detailsString length])];
+    
+    [attrString addAttribute:NSForegroundColorAttributeName
+                       value:[UIColor grayColor]
+                       range:NSMakeRange([statusString length] + 1, [detailsString length])];
+    
+    [attrString endEditing];
+    
+    CGRect rect = [attrString boundingRectWithSize:CGSizeMake(self.TableView.bounds.size.width, CGFLOAT_MAX)
+                                                 options:NSStringDrawingUsesLineFragmentOrigin
+                                                 context:nil];
+    
+    
+    
     return rect.size.height + 40;
 }
 

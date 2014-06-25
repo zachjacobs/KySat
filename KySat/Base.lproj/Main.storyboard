@@ -239,7 +239,7 @@
                                     <action selector="satTrackerButtonClick:" destination="2Sy-2r-aeo" eventType="touchUpInside" id="X3G-pf-fce"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="This button launches the @KentuckySpace twitter feed" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-t2-79J">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="This button launches the @KentuckySpace twitter feed" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-t2-79J">
                                 <rect key="frame" x="120" y="233" width="173" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -247,7 +247,7 @@
                                     <constraint firstAttribute="width" constant="173" id="EVX-aO-VT1"/>
                                     <constraint firstAttribute="height" constant="67" id="wVv-rP-kxj"/>
                                 </constraints>
-                                <color key="textColor" red="0.99215692280000001" green="0.7607843876" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -265,7 +265,7 @@
                                     <action selector="tweetButtonClick:" destination="2Sy-2r-aeo" eventType="touchUpInside" id="1Js-A4-rfW"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="This button launches a static tracker.  This tracker displays the current position of all Kentucky Satellites" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-J0-mU5">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="This button launches a static tracker.  This tracker displays the current position of all Kentucky Satellites" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-J0-mU5">
                                 <rect key="frame" x="120" y="314" width="180" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -273,7 +273,7 @@
                                     <constraint firstAttribute="height" constant="100" id="Tnn-iN-Brl"/>
                                     <constraint firstAttribute="width" constant="180" id="YXx-of-kdN"/>
                                 </constraints>
-                                <color key="textColor" red="0.99215692280000001" green="0.7607843876" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -294,7 +294,7 @@
                                     <action selector="emailButtonClick:" destination="2Sy-2r-aeo" eventType="touchUpInside" id="v9b-az-1uB"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Click here to email Kentucky Space  " translatesAutoresizingMaskIntoConstraints="NO" id="iXm-Mc-Nb8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Click here to email Kentucky Space  " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXm-Mc-Nb8">
                                 <rect key="frame" x="120" y="140" width="180" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -302,7 +302,7 @@
                                     <constraint firstAttribute="width" constant="180" id="gfL-ux-BT2"/>
                                     <constraint firstAttribute="height" constant="55" id="vNl-HR-ChY"/>
                                 </constraints>
-                                <color key="textColor" red="0.99215692280000001" green="0.7607843876" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -320,7 +320,7 @@
                                     <action selector="helpButtonClick:" destination="2Sy-2r-aeo" eventType="touchUpInside" id="Mlf-xG-Seg"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="This button launches the Kentucky Space information page" translatesAutoresizingMaskIntoConstraints="NO" id="gK5-No-36d">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="This button launches the Kentucky Space information page" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK5-No-36d">
                                 <rect key="frame" x="120" y="36" width="180" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -328,7 +328,7 @@
                                     <constraint firstAttribute="width" constant="180" id="WLM-p3-nXB"/>
                                     <constraint firstAttribute="height" constant="67" id="nbM-Og-Iej"/>
                                 </constraints>
-                                <color key="textColor" red="0.99215692280000001" green="0.7607843876" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
