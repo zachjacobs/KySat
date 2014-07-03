@@ -90,50 +90,23 @@
     return [self.statuses count];
 }
 
-// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-
+//Generate cell to display rows
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"STTwitterTVCellIdentifier"];
-    
+   // UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"STTwitterTVCellIdentifier"];
+
+    //http://stackoverflow.com/a/12706271  use nil for the identifier to create a new cell every time.  This is okay
+    //because of how simple our application is
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nil];
+
     if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"STTwitterTVCellIdentifier"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     }
     
     NSDictionary *status = [self.statuses objectAtIndex:indexPath.row];
     
-//    NSString *text = [status valueForKey:@"text"];
+    
+    //Combine two strings into one attributed string:  http://stackoverflow.com/a/22588946
 
-
-//    cell.textLabel.text = text;
-//    cell.textLabel.textColor = [UIColor whiteColor];
-//    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
-//    cell.textLabel.numberOfLines = 0;
-    
-    
-//    NSAttributedString *attributedText =
-//    [[NSAttributedString alloc]
-//     initWithString:string
-//     attributes:@
-//     {
-//     NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:14.0]
-//     }];
-    
-//    NSAttributedString *screenNameDateString =
-//    [[NSAttributedString alloc]
-//     initWithString:[NSString stringWithFormat:@"@%@ | %@", screenName, dateString]
-//     attributes:@
-//     {
-//     NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:14.0]
-//     }];
-    
-    
-    //http://stackoverflow.com/a/22588946
-    
-
-    
-    
-    
     NSString *statusString = [status valueForKey:@"text"];
     NSString *screenNameString = [status valueForKeyPath:@"user.screen_name"];
     NSString *dateString = [status valueForKey:@"created_at"];
@@ -167,7 +140,7 @@
                                                      context:nil];
     
     
-    UITextView *textV=[[UITextView alloc] initWithFrame:CGRectMake(0, 0, self.TableView.bounds.size.width, stringSize.size.height+40)];
+    UITextView *textV=[[UITextView alloc] initWithFrame:CGRectMake(0, 2, self.TableView.bounds.size.width, stringSize.size.height+30)];
     
     //Set the following properties to make the links clickable
     textV.editable=NO;
@@ -179,6 +152,7 @@
     textV.attributedText = attrString;
     textV.backgroundColor = [UIColor blackColor];
     
+    [cell.contentView addSubview:nil];
     [cell.contentView addSubview:textV];
 
     return cell;
@@ -186,24 +160,10 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //http://stackoverflow.com/a/22235855
-    
+    //We set up all of this stuff just to get the cell height.  Might be better to just keep an NSMutableArray of heights for each status
+    //but that would probably be difficult to keep in sync
     NSDictionary *status = [self.statuses objectAtIndex:indexPath.row];
-    
-//    NSString *cellText = [status valueForKey:@"text"];
-//    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:14.0];
-//    
-//    NSAttributedString *attributedText =
-//    [[NSAttributedString alloc]
-//     initWithString:cellText
-//     attributes:@
-//     {
-//     NSFontAttributeName: cellFont
-//     }];
-//    CGRect rect = [attributedText boundingRectWithSize:CGSizeMake(self.TableView.bounds.size.width, CGFLOAT_MAX)
-//                                               options:NSStringDrawingUsesLineFragmentOrigin
-//                                               context:nil];
-    
+
     NSString *statusString = [status valueForKey:@"text"];
     NSString *screenNameString = [status valueForKeyPath:@"user.screen_name"];
     NSString *dateString = [status valueForKey:@"created_at"];
@@ -236,9 +196,7 @@
                                                  options:NSStringDrawingUsesLineFragmentOrigin
                                                  context:nil];
     
-    
-    
-    return rect.size.height + 40;
+    return rect.size.height + 30;
 }
 
 @end
